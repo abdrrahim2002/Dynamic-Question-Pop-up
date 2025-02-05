@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>result</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static "Credit_Bereau_Score/index.css" %}">
+</head>
+<body>
+  <!-- create a nave bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container">
+      <h1>Django Form Wizzard</h1>
+    </div>
+  </nav>
+
+  <section>
+
+    <h1>Your credit score : {{username}}</h1>
+    <h2>Your score is {{score}}/{{number_of_questions}}</h2>
+    <button onclick="window.location.reload(true)" class="btn btn-primary">Reset</button>
+  </section>
+</body>
+</html>
